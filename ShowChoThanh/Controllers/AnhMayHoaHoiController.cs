@@ -22,7 +22,7 @@ namespace ShowChoThanh.Controllers
             _db = db;
         }
         [HttpGet]
-        public ActionResult Get()
+        public ActionResult GetMayHoaHoi()
         {
             var db = _db.AnhMayHoaHois.ToList();
             return Ok(db);
